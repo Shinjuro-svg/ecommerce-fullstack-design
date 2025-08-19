@@ -6,7 +6,7 @@
 	<meta name="description" content="Ecommerce templates for your next project">
 	<meta name="author" content="Ecommerce-ui.com">
 
-	<title>Website layout sample </title>
+	<title>HomePage</title>
 
 	<!-- FinalCSS -->
 	<link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -516,7 +516,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/2.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -531,7 +531,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/3.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -546,7 +546,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/4.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -561,7 +561,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/5.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -576,7 +576,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/6.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -591,7 +591,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/7.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -606,7 +606,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-basic/8.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -621,7 +621,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-cloth/1.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -636,7 +636,7 @@
 		</div> <!-- col // -->
 
 		<div>
-	        <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
+            <a href="#" class="card hover:border-color-primary-300 overflow-hidden">
 				<div class="bg-neutral-200"> 
 					<img src="../assets/images/product-cloth/2.png" width="300" class="w-100% h-55"> 
 				</div>
@@ -716,47 +716,7 @@
 	</section>
 </footer>
 
-
-
-
-<script>
-	// ***********************
-	// Show/hide dropdown 
-	document.addEventListener("click", function (event) {
-			// Find the closest ancestor with a `data-trigger` attribute (if any)
-			const triggerElement = event.target.closest("[data-toggle]");
-
-			if (triggerElement) {
-					// Get the target ID from the `data-trigger` attribute
-					const targetId = triggerElement.getAttribute("data-toggle");
-					const targetElement = document.getElementById(targetId);
-
-					if (targetElement) {
-						console.log(targetElement.style.display);
-							// Toggle element
-							if (targetElement.style.display === "none" || !targetElement.style.display || targetElement.hasAttribute('hidden')) {
-									targetElement.style.display = "block"; // Show the dropdown
-									targetElement.removeAttribute('hidden');
-							} else {
-									targetElement.style.display = "none"; // Hide the dropdown
-									targetElement.setAttribute('hidden', '');
-							}
-					}
-					// Prevent default action for links (optional)
-					event.preventDefault();
-					return; // Exit, since we handled the trigger click
-			}
-			// Close dropdowns if clicked outside
-			const openedDropdowns = document.querySelectorAll('.dropdown[style*="display: block"]');
-			openedDropdowns.forEach(dropdown => {
-					// Check if the click is inside the dropdown
-					if (!dropdown.contains(event.target)) {
-							dropdown.style.display = "none"; // Close the dropdown
-					}
-			});
-	});
-</script>
-
+    <script src="../assets/js/main.js"></script>
 
 </body>
 </html>
