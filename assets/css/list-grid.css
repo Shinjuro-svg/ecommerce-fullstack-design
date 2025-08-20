@@ -1,0 +1,13 @@
+/* View toggles for product list */
+#products.grid-view { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+@media (min-width: 1024px) {
+    #products.grid-view { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+#products.list-view { display: grid !important; grid-template-columns: 1fr; gap: 1rem; }
+#products.list-view figure { display: flex; gap: 1rem; align-items: flex-start; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff; }
+#products.list-view figure > a { width: 180px; height: 140px; flex-shrink: 0; }
+#products.list-view figure > a img { width: 100%; height: 100%; object-fit: cover; }
+#products.list-view figcaption { flex: 1; }
+/* Description visibility: only in list view */
+#products .product-desc { display: none; color: #6b7280; margin: 0 0 0.5rem 0; }
+#products.list-view .product-desc { display: block; }
